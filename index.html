@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Jeevananth M G | Software Developer &amp; IT Engineer Portfolio</title>
+  <meta name="title" content="Jeevananth M G | Software Developer &amp; IT Engineer Portfolio">
+  <meta name="description" content="Portfolio of Jeevananth M G - Information Technology student at Nandha Engineering College. Passionate Software Developer specializing in Java, Web Technologies, and intelligent software systems.">
+  <meta name="keywords" content="Jeevananth, Jeevananth M G, Jeeva, Software Developer, Java Developer, Web Developer, Nandha Engineering College, Portfolio, Tamil Nadu, Fresher Developer">
+  <meta name="author" content="Jeevananth M G">
+  <meta name="theme-color" content="#060913">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jeevananth M G | Software Developer &amp; IT Engineer">
+  <meta property="og:description" content="Explore projects, technical skills, certifications, and resume of Jeevananth M G.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Jeevananth M G | Software Developer Portfolio">
+  <meta property="twitter:description" content="Explore projects, technical skills, certifications, and resume of Jeevananth M G.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='68%' font-size='55' font-weight='900' fill='white' font-family='sans-serif' text-anchor='middle'>J</text></svg>">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- JSON-LD Structured Data for Search Engines & ATS -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jeevananth M G",
+    "jobTitle": "Software Developer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Nandha Engineering College, Erode"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Namakkal",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "India"
+    },
+    "email": "jeevanishwanth8990@gmail.com",
+    "telephone": "+917708249797",
+    "sameAs": [
+      "https://github.com/Jeevananth18"
+    ],
+    "knowsAbout": ["Java", "Object-Oriented Programming", "HTML5", "CSS3", "JavaScript", "Figma", "VS Code", "Data Structures"]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Interactive Ambient Canvas & Background Glows -->
+  <canvas id="particle-canvas"></canvas>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Jeevananth Portfolio">
+        <div class="logo-icon">J</div>
+        <div class="logo-text">Jeeva<span>.dev</span></div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fas fa-laptop-code"></i> Projects</a></li>
+        <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate"></i> Certifications</a></li>
+        <li><a href="#contact" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Accent Switcher -->
+        <div class="theme-customizer" title="Switch Theme Accent">
+          <button class="color-dot-btn theme-indigo active" onclick="setThemeAccent('indigo')" aria-label="Indigo Accent"></button>
+          <button class="color-dot-btn theme-cyan" onclick="setThemeAccent('cyan')" aria-label="Cyan Accent"></button>
+          <button class="color-dot-btn theme-emerald" onclick="setThemeAccent('emerald')" aria-label="Emerald Accent"></button>
+          <button class="color-dot-btn theme-purple" onclick="setThemeAccent('purple')" aria-label="Purple Accent"></button>
+        </div>
+
+        <button onclick="openResumeModal()" class="btn btn-secondary btn-sm" id="btn-nav-resume">
+          <i class="fas fa-file-pdf" style="color: var(--primary-light);"></i> Resume
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <i class="fas fa-briefcase"></i> Hire Me
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Bio & Call to Actions -->
+          <div class="hero-content reveal">
+            <div class="badge-status">
+              <span class="status-dot"></span>
+              <span>Available for Software Developer &amp; Internship Roles</span>
+            </div>
+
+            <div class="hero-greeting">
+              <span>&gt; Welcome to my portfolio</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Jeevananth M G</span>
+            </h1>
+
+            <div class="hero-role-wrapper">
+              <span>I build as a</span>
+              <span class="typed-role">Software Developer</span>
+              <span class="cursor-blink"></span>
+            </div>
+
+            <p class="hero-description">
+              Information Technology undergraduate at <strong>Nandha Engineering College</strong> with a solid foundation in <strong>Java programming</strong>, <strong>object-oriented architecture</strong>, and <strong>modern web development</strong>. Dedicated to building efficient software solutions with clean code.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary shimmer-hover">
+                <i class="fas fa-rocket"></i> Explore Projects
+              </a>
+              <a href="assets/JEEVANANTH_RESUME.pdf" download="JEEVANANTH_M_G_RESUME.pdf" class="btn btn-secondary">
+                <i class="fas fa-download"></i> Download CV
+              </a>
+              <button onclick="openResumeModal()" class="btn btn-secondary">
+                <i class="fas fa-eye"></i> View Resume
+              </button>
+            </div>
+
+            <!-- Fast Recruiter Connect Pills -->
+            <div class="hero-socials">
+              <a href="https://github.com/Jeevananth18/jeevananth.git" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Profile">
+                <i class="fab fa-github"></i> <span>GitHub</span>
+              </a>
+              <button onclick="copyToClipboard('jeevanishwanth8990@gmail.com', 'Email Address')" class="social-pill" title="Click to Copy Email">
+                <i class="fas fa-envelope"></i> <span>Email</span>
+              </button>
+              <button onclick="copyToClipboard('+917708249797', 'Phone Number')" class="social-pill" title="Click to Copy Phone">
+                <i class="fas fa-phone-alt"></i> <span>+91 7708249797</span>
+              </button>
+              <button onclick="sharePortfolio()" class="social-pill" title="Share Portfolio Link">
+                <i class="fas fa-share-alt" style="color: var(--cyan-light);"></i> <span>Share</span>
+              </button>
+              <span class="social-pill" style="cursor: default;">
+                <i class="fas fa-map-marker-alt" style="color: var(--cyan);"></i> Namakkal, TN
+              </span>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Code Terminal Card -->
+          <div class="hero-visual reveal reveal-delay-2">
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge floating-badge-1">
+              <div class="floating-icon icon-java"><i class="fab fa-java"></i></div>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-dim);">Core Strength</div>
+                <div style="color: #fff;">Java &amp; OOP</div>
+              </div>
+            </div>
+
+            <div class="floating-badge floating-badge-2">
+              <div class="floating-icon icon-web"><i class="fas fa-code"></i></div>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-dim);">Web Tech</div>
+                <div style="color: #fff;">HTML • CSS • JS</div>
+              </div>
+            </div>
+
+            <!-- Terminal Window -->
+            <div class="code-terminal">
+              <div class="terminal-header">
+                <div class="terminal-controls">
+                  <span class="control-dot dot-red"></span>
+                  <span class="control-dot dot-yellow"></span>
+                  <span class="control-dot dot-green"></span>
+                </div>
+                <div class="terminal-tab">
+                  <i class="fas fa-terminal"></i> JeevananthProfile.java
+                </div>
+                <button class="terminal-run-btn" id="run-terminal-code" onclick="runTerminalCode()" title="Execute Java Profile Code">
+                  <i class="fas fa-play"></i> Run Code
+                </button>
+              </div>
+
+              <div class="terminal-body">
+                <div class="code-line"><span class="line-num">01</span><span><span class="token-keyword">public class</span> <span class="token-class">Developer</span> {</span></div>
+                <div class="code-line"><span class="line-num">02</span><span>&nbsp;&nbsp;<span class="token-keyword">private String</span> <span class="token-prop">name</span> = <span class="token-string">"Jeevananth M G"</span>;</span></div>
+                <div class="code-line"><span class="line-num">03</span><span>&nbsp;&nbsp;<span class="token-keyword">private String</span> <span class="token-prop">degree</span> = <span class="token-string">"B.Tech Information Technology"</span>;</span></div>
+                <div class="code-line"><span class="line-num">04</span><span>&nbsp;&nbsp;<span class="token-keyword">private double</span> <span class="token-prop">cgpa</span> = <span class="token-func">7.8</span>;</span></div>
+                <div class="code-line"><span class="line-num">05</span><span>&nbsp;&nbsp;<span class="token-keyword">private String[]</span> <span class="token-prop">skills</span> = {</span></div>
+                <div class="code-line"><span class="line-num">06</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="token-string">"Java"</span>, <span class="token-string">"OOP"</span>, <span class="token-string">"HTML5"</span>, <span class="token-string">"CSS3"</span>, <span class="token-string">"JavaScript"</span>, <span class="token-string">"Figma"</span></span></div>
+                <div class="code-line"><span class="line-num">07</span><span>&nbsp;&nbsp;};</span></div>
+                <div class="code-line"><span class="line-num">08</span><span>&nbsp;&nbsp;</span></div>
+                <div class="code-line"><span class="line-num">09</span><span>&nbsp;&nbsp;<span class="token-keyword">public void</span> <span class="token-func">buildSolutions</span>() {</span></div>
+                <div class="code-line"><span class="line-num">10</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="token-comment">// Always improving skills through hands-on learning</span></span></div>
+                <div class="code-line"><span class="line-num">11</span><span>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="token-string">"Ready to innovate &amp; contribute!"</span>);</span></div>
+                <div class="code-line"><span class="line-num">12</span><span>&nbsp;&nbsp;}</span></div>
+                <div class="code-line"><span class="line-num">13</span><span>}</span></div>
+              </div>
+
+              <!-- Interactive Terminal Execution Output -->
+              <div class="terminal-output-container" id="terminal-output" style="display: none;">
+                <div class="terminal-output-text">
+                  <span class="out-prompt">&gt; java Developer.java</span><br>
+                  <span class="out-highlight"><i class="fas fa-check-circle"></i> Output: "Ready to innovate &amp; contribute!"</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Recruiter Quick Stats Bar -->
+        <div class="stats-banner reveal reveal-delay-3">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-value">7.8</div>
+              <div class="stat-label">B.Tech IT CGPA</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">2028</div>
+              <div class="stat-label">Batch (Nandha Engg)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">2+</div>
+              <div class="stat-label">NPTEL Certifications</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">100%</div>
+              <div class="stat-label">Eager to Learn &amp; Build</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT & PROFESSIONAL SUMMARY SECTION
+         ========================================================================== -->
+    <section id="about" class="section-spacing">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag"><i class="fas fa-user-circle"></i> About Me</div>
+          <h2 class="section-title">Driven by <span>Passion &amp; Problem Solving</span></h2>
+          <p class="section-desc">Get to know my academic background, technical discipline, and aspirations as a software developer.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left Summary Card -->
+          <div class="about-card reveal">
+            <div class="about-avatar-wrapper">
+              <div class="avatar-box">JM</div>
+              <div class="avatar-meta">
+                <h3>Jeevananth M G</h3>
+                <p><i class="fas fa-map-pin"></i> Namakkal, Tamil Nadu, India</p>
+              </div>
+            </div>
+
+            <div class="about-highlights-list">
+              <div class="highlight-point">
+                <i class="fas fa-check-circle"></i>
+                <span><strong>Strong Java Fundamentals:</strong> Deep understanding of OOP, data handling, and structured programming.</span>
+              </div>
+              <div class="highlight-point">
+                <i class="fas fa-check-circle"></i>
+                <span><strong>Modern Web Technologies:</strong> Responsive web development with clean HTML5, CSS3, and JavaScript.</span>
+              </div>
+              <div class="highlight-point">
+                <i class="fas fa-check-circle"></i>
+                <span><strong>Proactive &amp; Adaptable:</strong> Quick learner with good analytical problem-solving abilities.</span>
+              </div>
+              <div class="highlight-point">
+                <i class="fas fa-check-circle"></i>
+                <span><strong>Collaborative Mindset:</strong> Eager to learn industry practices and contribute effectively to development teams.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content Column -->
+          <div class="about-text-col reveal reveal-delay-2">
+            <h3 style="font-size: 1.6rem; color: #fff;">Aspiring Software Developer Ready to Make an Impact</h3>
+            <p class="about-paragraph">
+              I am a motivated Information Technology undergraduate student at <strong>Nandha Engineering College</strong>. My technical journey is anchored in <strong>Java programming</strong> and <strong>full-stack web development</strong>, where I combine theoretical fundamentals with practical academic projects.
+            </p>
+            <p class="about-paragraph">
+              I actively and continuously improve my technical expertise through self-learning, coding challenges, and building real-world projects like the <strong>AI-based Hotel Reservation System</strong>. I am seeking an opportunity as a Software Developer to contribute to innovative software development teams while expanding my technical skills.
+            </p>
+
+            <div class="about-values-grid">
+              <div class="value-card">
+                <div class="value-icon" style="color: var(--primary-light);"><i class="fas fa-cube"></i></div>
+                <h4>Clean Architecture</h4>
+                <p>Writing modular, readable, and maintainable object-oriented code.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon" style="color: var(--cyan);"><i class="fas fa-bolt"></i></div>
+                <h4>Fast Learner</h4>
+                <p>Quickly adapting to modern frameworks, tools, and developer workflows.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon" style="color: var(--purple);"><i class="fas fa-palette"></i></div>
+                <h4>UI &amp; Usability</h4>
+                <p>Designing user-friendly interfaces with Figma and responsive CSS.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon" style="color: var(--emerald);"><i class="fas fa-users"></i></div>
+                <h4>Team Player</h4>
+                <p>Excelling in collaborative environments with effective communication.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS MATRIX SECTION
+         ========================================================================== -->
+    <section id="skills" class="section-spacing" style="background: rgba(11, 17, 32, 0.4);">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag"><i class="fas fa-layer-group"></i> Technical Arsenal</div>
+          <h2 class="section-title">Skills &amp; <span>Core Competencies</span></h2>
+          <p class="section-desc">A structured overview of programming languages, web technologies, design tools, and engineering fundamentals.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-tabs reveal">
+          <button class="skill-tab-btn active" data-filter="all">
+            <i class="fas fa-border-all"></i> All Skills
+          </button>
+          <button class="skill-tab-btn" data-filter="programming">
+            <i class="fab fa-java"></i> Programming
+          </button>
+          <button class="skill-tab-btn" data-filter="web">
+            <i class="fas fa-globe"></i> Web Technologies
+          </button>
+          <button class="skill-tab-btn" data-filter="tools">
+            <i class="fas fa-tools"></i> Tools &amp; UI
+          </button>
+          <button class="skill-tab-btn" data-filter="fundamentals">
+            <i class="fas fa-brain"></i> CS Fundamentals
+          </button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          
+          <!-- Card 1: Java -->
+          <div class="skill-card reveal" data-category="programming">
+            <div class="skill-header">
+              <div class="skill-icon-wrap" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b; border-color: rgba(245, 158, 11, 0.3);">
+                <i class="fab fa-java"></i>
+              </div>
+              <span class="skill-level-badge">Primary Language</span>
+            </div>
+            <div class="skill-name">Java Programming</div>
+            <p class="skill-desc">Object-Oriented Programming (OOP), Classes &amp; Objects, Inheritance, Polymorphism, Exception Handling, Collections, and modular application logic.</p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Core Java</span>
+              <span class="skill-mini-tag">OOPs</span>
+              <span class="skill-mini-tag">Collections</span>
+              <span class="skill-mini-tag">Backend Logic</span>
+            </div>
+          </div>
+
+          <!-- Card 2: HTML5 & CSS3 -->
+          <div class="skill-card reveal reveal-delay-1" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon-wrap" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">
+                <i class="fab fa-html5"></i>
+              </div>
+              <span class="skill-level-badge">Frontend Core</span>
+            </div>
+            <div class="skill-name">HTML5 &amp; CSS3</div>
+            <p class="skill-desc">Semantic document structure, accessible markup, Flexbox, CSS Grid layouts, glassmorphic UI styling, transitions, and responsive mobile-first design.</p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Semantic HTML5</span>
+              <span class="skill-mini-tag">CSS Grid &amp; Flexbox</span>
+              <span class="skill-mini-tag">Responsive UI</span>
+              <span class="skill-mini-tag">Glassmorphism</span>
+            </div>
+          </div>
+
+          <!-- Card 3: JavaScript -->
+          <div class="skill-card reveal reveal-delay-2" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon-wrap" style="background: rgba(234, 179, 8, 0.15); color: #facc15; border-color: rgba(234, 179, 8, 0.3);">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <span class="skill-level-badge">Web Scripting</span>
+            </div>
+            <div class="skill-name">JavaScript (ES6+)</div>
+            <p class="skill-desc">DOM manipulation, event listeners, asynchronous operations, interactive modals, API handling, dynamic component rendering, and validation logic.</p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">ES6+</span>
+              <span class="skill-mini-tag">DOM Manipulation</span>
+              <span class="skill-mini-tag">Event Handling</span>
+              <span class="skill-mini-tag">Canvas API</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Figma & UI Design -->
+          <div class="skill-card reveal reveal-delay-1" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon-wrap" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">
+                <i class="fab fa-figma"></i>
+              </div>
+              <span class="skill-level-badge">Design Tool</span>
+            </div>
+            <div class="skill-name">Figma UI Design</div>
+            <p class="skill-desc">Wireframing, modern user interface layouts, prototyping interactive workflows, component design systems, and converting design mockups to clean web code.</p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Wireframing</span>
+              <span class="skill-mini-tag">Prototyping</span>
+              <span class="skill-mini-tag">UI / UX</span>
+              <span class="skill-mini-tag">Design Systems</span>
+            </div>
+          </div>
+
+          <!-- Card 5: VS Code & Git -->
+          <div class="skill-card reveal reveal-delay-2" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon-wrap" style="background: rgba(6, 182, 212, 0.15); color: #38bdf8; border-color: rgba(6, 182, 212, 0.3);">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <span class="skill-level-badge">Environment</span>
+            </div>
+            <div class="skill-name">VS Code &amp; Git / GitHub</div>
+            <p class="skill-desc">Visual Studio Code IDE workflows, version control using Git, repository management on GitHub, debugging tools, extensions, and automated project structures.</p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">VS Code</span>
+              <span class="skill-mini-tag">Git</span>
+              <span class="skill-mini-tag">GitHub</span>
+              <span class="skill-mini-tag">Debugging</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Problem Solving & CS Fundamentals -->
+          <div class="skill-card reveal reveal-delay-3" data-category="fundamentals">
+            <div class="skill-header">
+              <div class="skill-icon-wrap" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.3);">
+                <i class="fas fa-brain"></i>
+              </div>
+              <span class="skill-level-badge">Core Foundation</span>
+            </div>
+            <div class="skill-name">Problem Solving &amp; DSA</div>
+            <p class="skill-desc">Analytical problem-solving, understanding algorithmic complexity, basic data structures (arrays, strings, search/sort algorithms), and structured software design.</p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Algorithms</span>
+              <span class="skill-mini-tag">Data Structures</span>
+              <span class="skill-mini-tag">Logic Building</span>
+              <span class="skill-mini-tag">Optimization</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION
+         ========================================================================== -->
+    <section id="projects" class="section-spacing">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag"><i class="fas fa-project-diagram"></i> Portfolio Showcase</div>
+          <h2 class="section-title">Featured <span>Projects</span></h2>
+          <p class="section-desc">Practical software solutions combining Java backend logic, AI features, and modern web interfaces.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Hotel Reservation System Using AI -->
+          <div class="project-card reveal">
+            <span class="project-badge-featured"><i class="fas fa-star"></i> Featured Project</span>
+            
+            <div class="project-banner">
+              <div class="project-banner-visual">
+                <div class="project-banner-icon" style="color: #6366f1;"><i class="fas fa-hotel"></i></div>
+                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--cyan-light); font-weight: 600;">Java • AI Integration • Web UI</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-title">Hotel Reservation System Using AI</div>
+              <p class="project-description">
+                Developed an intelligent Hotel Reservation System using Java with AI-based features to streamline room booking and reservation management. Provides an intuitive user interface for managing hotel bookings while improving customer experience through smart functionality.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Automated room availability tracking &amp; booking management.</li>
+                <li>AI-assisted room recommendations tailored to user preferences.</li>
+                <li>Interactive, easy-to-use frontend with HTML, CSS, and JavaScript.</li>
+                <li>Robust Java backend logic ensuring data consistency and smooth reservations.</li>
+              </ul>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">AI Logic</span>
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">OOP</span>
+              </div>
+
+              <div class="project-card-actions">
+                <button onclick="openProjectModal('hotel-ai')" class="btn btn-primary btn-sm shimmer-hover" style="flex: 1;">
+                  <i class="fas fa-info-circle"></i> Project Details
+                </button>
+                <button onclick="openSimulatorModal()" class="btn btn-secondary btn-sm" title="Launch Interactive Simulator">
+                  <i class="fas fa-play" style="color: var(--cyan-light);"></i> Live Demo
+                </button>
+                <a href="https://github.com/Jeevananth18/jeevananth.git" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View GitHub Code">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Recruiter-Ready Portfolio Hub -->
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-banner" style="background: linear-gradient(135deg, #111827 0%, #1e1b4b 60%, #0369a1 100%);">
+              <div class="project-banner-visual">
+                <div class="project-banner-icon" style="color: #38bdf8;"><i class="fas fa-laptop-code"></i></div>
+                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #a5f3fc; font-weight: 600;">HTML5 • CSS3 • Vanilla JS • Canvas</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-title">Interactive Developer Portfolio Hub</div>
+              <p class="project-description">
+                A high-performance modern developer portfolio engineered specifically for technical interviews and recruiter sharing. Features GPU-accelerated canvas physics, glassmorphic UI cards, dynamic typewriter animations, and recruiter fast actions.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Zero-dependency Vanilla JS architecture for instant load speeds.</li>
+                <li>Interactive PDF resume modal viewer &amp; one-click download.</li>
+                <li>One-click clipboard triggers with real-time toast feedback.</li>
+                <li>Fully responsive layout optimized for mobile, tablet, and desktop.</li>
+              </ul>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">Vanilla JS</span>
+                <span class="tech-pill">Canvas API</span>
+                <span class="tech-pill">SEO &amp; Schema</span>
+              </div>
+
+              <div class="project-card-actions">
+                <button onclick="openProjectModal('dev-portfolio')" class="btn btn-primary btn-sm shimmer-hover" style="flex: 1;">
+                  <i class="fas fa-info-circle"></i> Project Details
+                </button>
+                <a href="https://github.com/Jeevananth18" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View GitHub Profile">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Java OOP & DSA Problem Solving Hub -->
+          <div class="project-card reveal reveal-delay-2">
+            <div class="project-banner" style="background: linear-gradient(135deg, #0f172a 0%, #312e81 60%, #1e293b 100%);">
+              <div class="project-banner-visual">
+                <div class="project-banner-icon" style="color: #f59e0b;"><i class="fas fa-code-branch"></i></div>
+                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #fde68a; font-weight: 600;">Java SE • OOP Principles • Algorithms</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-title">Java OOP &amp; Problem Solving Hub</div>
+              <p class="project-description">
+                A structured repository of Java programs demonstrating core Object-Oriented Programming principles (Encapsulation, Inheritance, Polymorphism, Abstraction) and foundational data structures/algorithms.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Implementation of design patterns &amp; OOP concepts in Java.</li>
+                <li>Practice problems covering arrays, strings, searching, and sorting.</li>
+                <li>Adherence to clean coding practices and modular architecture.</li>
+              </ul>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">Java SE</span>
+                <span class="tech-pill">OOP Concepts</span>
+                <span class="tech-pill">Data Structures</span>
+                <span class="tech-pill">VS Code</span>
+              </div>
+
+              <div class="project-card-actions">
+                <button onclick="openProjectModal('java-dsa')" class="btn btn-primary btn-sm shimmer-hover" style="flex: 1;">
+                  <i class="fas fa-info-circle"></i> Project Details
+                </button>
+                <a href="https://github.com/Jeevananth18" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View GitHub Code">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL MINDSET & INTERVIEW Q&A SECTION
+         ========================================================================== -->
+    <section id="interview-faq" class="section-spacing">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag"><i class="fas fa-lightbulb"></i> Developer Insight</div>
+          <h2 class="section-title">Technical Mindset &amp; <span>Approach</span></h2>
+          <p class="section-desc">Key insights into how I write software, solve technical challenges, and continuously adapt.</p>
+        </div>
+
+        <div class="faq-accordion reveal">
+          
+          <div class="faq-item active">
+            <div class="faq-header">
+              <span><i class="fab fa-java" style="color: #f59e0b; margin-right: 0.5rem;"></i> Why Java &amp; Object-Oriented Architecture?</span>
+              <i class="fas fa-chevron-down chevron"></i>
+            </div>
+            <div class="faq-body">
+              Java gives me a rigorous understanding of typed structures, design patterns, encapsulation, and memory efficiency. Building object-oriented systems teaches me how to design decoupled, scalable software components that can grow into large-scale production applications.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <span><i class="fas fa-code" style="color: var(--cyan-light); margin-right: 0.5rem;"></i> What is my approach to frontend development and UI design?</span>
+              <i class="fas fa-chevron-down chevron"></i>
+            </div>
+            <div class="faq-body">
+              I focus on user-centric design and clean code. Starting with wireframes in Figma, I write semantic, accessible HTML5, responsive CSS without unnecessary bloat, and performant Vanilla JavaScript for snappy interactions and fast loading speeds.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <span><i class="fas fa-sync-alt" style="color: var(--emerald); margin-right: 0.5rem;"></i> How do I handle new technologies and fast-paced learning?</span>
+              <i class="fas fa-chevron-down chevron"></i>
+            </div>
+            <div class="faq-body">
+              Through proactive self-learning, official documentation, NPTEL certifications (such as Blockchain &amp; English), and immediate hands-on coding. When learning a concept, I rapidly build a mini-project to validate practical understanding and solidify muscle memory.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & TIMELINE SECTION
+         ========================================================================== -->
+    <section id="education" class="section-spacing" style="background: rgba(11, 17, 32, 0.4);">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag"><i class="fas fa-graduation-cap"></i> Academic Pathway</div>
+          <h2 class="section-title">Education &amp; <span>Milestones</span></h2>
+          <p class="section-desc">My formal education in Information Technology and foundational academic achievements.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Item 1: B.Tech IT -->
+          <div class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="institution-title">Nandha Engineering College</h3>
+                  <p style="font-size: 0.88rem; color: var(--text-muted);"><i class="fas fa-map-marker-alt"></i> Erode, Tamil Nadu</p>
+                </div>
+                <span class="timeline-duration">2024 – 2028 (Pursuing)</span>
+              </div>
+              <div class="timeline-degree">Bachelor of Technology (B.Tech) – Information Technology</div>
+              <div class="timeline-score"><i class="fas fa-award"></i> CGPA: 7.8</div>
+              <p style="font-size: 0.92rem; color: #cbd5e1; line-height: 1.6;">
+                Focused on core computer science fundamentals, Java programming, data structures, web technologies, and software engineering principles. Active participant in technical labs and academic projects.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: HSC -->
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="institution-title">The Modern Academy</h3>
+                  <p style="font-size: 0.88rem; color: var(--text-muted);"><i class="fas fa-map-marker-alt"></i> Tamil Nadu</p>
+                </div>
+                <span class="timeline-duration">Completed 2024</span>
+              </div>
+              <div class="timeline-degree">Higher Secondary Certificate (HSC) – 12th Grade</div>
+              <div class="timeline-score"><i class="fas fa-percentage"></i> Score: 80.1%</div>
+              <p style="font-size: 0.92rem; color: #cbd5e1; line-height: 1.6;">
+                Completed higher secondary education with a strong focus on mathematics and science, achieving an 80.1% aggregate.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: SSLC -->
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="institution-title">The Spectrum Academy</h3>
+                  <p style="font-size: 0.88rem; color: var(--text-muted);"><i class="fas fa-map-marker-alt"></i> Tamil Nadu</p>
+                </div>
+                <span class="timeline-duration">Completed 2022</span>
+              </div>
+              <div class="timeline-degree">Secondary School Leaving Certificate (SSLC) – 10th Grade</div>
+              <div class="timeline-score"><i class="fas fa-percentage"></i> Score: 59.6%</div>
+              <p style="font-size: 0.92rem; color: #cbd5e1; line-height: 1.6;">
+                Built foundational academic knowledge and analytical discipline.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CERTIFICATIONS & ACHIEVEMENTS SECTION
+         ========================================================================== -->
+    <section id="certifications" class="section-spacing">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag"><i class="fas fa-certificate"></i> Credentials</div>
+          <h2 class="section-title">Certifications &amp; <span>Achievements</span></h2>
+          <p class="section-desc">National Programme on Technology Enhanced Learning (NPTEL) certified credentials and recognitions.</p>
+        </div>
+
+        <div class="certs-grid">
+          
+          <!-- Cert 1: Blockchain -->
+          <div class="cert-card reveal">
+            <div class="cert-badge-icon" style="color: var(--cyan-light);">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="cert-info">
+              <h3>Blockchain and Its Applications</h3>
+              <div class="cert-issuer"><i class="fas fa-university"></i> NPTEL Certification</div>
+              <p class="cert-desc">
+                Comprehensive study of distributed ledger technologies, consensus algorithms, cryptographic primitives, smart contracts, and real-world decentralized application architecture.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cert 2: English for Competitive Exams -->
+          <div class="cert-card reveal reveal-delay-1">
+            <div class="cert-badge-icon" style="color: var(--primary-light);">
+              <i class="fas fa-language"></i>
+            </div>
+            <div class="cert-info">
+              <h3>English Language for Competitive Exams</h3>
+              <div class="cert-issuer"><i class="fas fa-university"></i> NPTEL Certification</div>
+              <p class="cert-desc">
+                Advanced proficiency in professional communication, verbal aptitude, technical comprehension, and precise articulation essential for global engineering teams.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cert 3: Academic Excellence & Self-Learning -->
+          <div class="cert-card reveal reveal-delay-2">
+            <div class="cert-badge-icon" style="color: var(--emerald);">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="cert-info">
+              <h3>Continuous Learning &amp; Projects</h3>
+              <div class="cert-issuer"><i class="fas fa-code"></i> Hands-on Development</div>
+              <p class="cert-desc">
+                Actively improving programming and software development skills through academic projects, software engineering challenges, and continuous self-learning.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT & RECRUITER HUB SECTION
+         ========================================================================== -->
+    <section id="contact" class="section-spacing" style="background: rgba(11, 17, 32, 0.4);">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag"><i class="fas fa-envelope-open-text"></i> Get In Touch</div>
+          <h2 class="section-title">Let's Connect &amp; <span>Collaborate</span></h2>
+          <p class="section-desc">I am actively seeking software developer opportunities, internships, and collaborative projects. Feel free to reach out directly!</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left: Direct Contact Cards -->
+          <div class="contact-info-panel reveal">
+            <div class="contact-card-direct">
+              <h3>Recruiter Fast Connect</h3>
+              <p style="color: var(--text-muted);">Click on any item to quickly copy details or open direct communication channels.</p>
+
+              <div class="contact-methods-list">
+                
+                <!-- Email -->
+                <div class="contact-method-item">
+                  <div class="method-details">
+                    <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="method-text">
+                      <div class="label">Email Address</div>
+                      <a href="mailto:jeevanishwanth8990@gmail.com" class="val">jeevanishwanth8990@gmail.com</a>
+                    </div>
+                  </div>
+                  <button onclick="copyToClipboard('jeevanishwanth8990@gmail.com', 'Email')" class="btn-copy-fast" title="Copy Email">
+                    <i class="fas fa-copy"></i> Copy
+                  </button>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-method-item">
+                  <div class="method-details">
+                    <div class="method-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="method-text">
+                      <div class="label">Phone / WhatsApp</div>
+                      <a href="tel:+917708249797" class="val">+91 7708249797</a>
+                    </div>
+                  </div>
+                  <button onclick="copyToClipboard('+917708249797', 'Phone Number')" class="btn-copy-fast" title="Copy Phone">
+                    <i class="fas fa-copy"></i> Copy
+                  </button>
+                </div>
+
+                <!-- GitHub -->
+                <div class="contact-method-item">
+                  <div class="method-details">
+                    <div class="method-icon"><i class="fab fa-github"></i></div>
+                    <div class="method-text">
+                      <div class="label">GitHub Repository</div>
+                      <a href="https://github.com/Jeevananth18/jeevananth.git" target="_blank" rel="noopener noreferrer" class="val">github.com/Jeevananth18</a>
+                    </div>
+                  </div>
+                  <a href="https://github.com/Jeevananth18/jeevananth.git" target="_blank" rel="noopener noreferrer" class="btn-copy-fast">
+                    <i class="fas fa-external-link-alt"></i> Open
+                  </a>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-method-item">
+                  <div class="method-details">
+                    <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="method-text">
+                      <div class="label">Location</div>
+                      <div class="val">Namakkal, Tamil Nadu, India</div>
+                    </div>
+                  </div>
+                  <span class="badge-status" style="padding: 0.2rem 0.6rem; font-size: 0.75rem;">Open to Relocate</span>
+                </div>
+
+              </div>
+
+              <!-- Quick Action Buttons -->
+              <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                <a href="assets/JEEVANANTH_RESUME.pdf" download="JEEVANANTH_M_G_RESUME.pdf" class="btn btn-primary btn-sm" style="flex: 1;">
+                  <i class="fas fa-download"></i> Download Resume
+                </a>
+                <a href="https://wa.me/917708249797?text=Hi%20Jeevananth,%20I%20reviewed%20your%20portfolio..." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="flex: 1;">
+                  <i class="fab fa-whatsapp" style="color: #25d366;"></i> WhatsApp
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card reveal reveal-delay-1">
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.4rem; color: #fff;">Send Direct Message</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.5rem;">Fill out the details below to dispatch an email inquiry directly to my inbox.</p>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name"><i class="fas fa-user" style="color: var(--cyan);"></i> Your Name / Organization</label>
+                <input type="text" id="form-name" class="form-control" placeholder="e.g. Talent Acquisition / Recruiter" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email"><i class="fas fa-envelope" style="color: var(--cyan);"></i> Your Email Address</label>
+                <input type="email" id="form-email" class="form-control" placeholder="recruiter@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject"><i class="fas fa-tag" style="color: var(--cyan);"></i> Opportunity Subject</label>
+                <input type="text" id="form-subject" class="form-control" placeholder="Software Developer Role / Internship Inquiry" value="Software Developer Opportunity Discussion">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message"><i class="fas fa-comment-alt" style="color: var(--cyan);"></i> Message</label>
+                <textarea id="form-message" class="form-control" placeholder="Hi Jeevananth, we reviewed your profile and would like to invite you for an interview..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary shimmer-hover" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Send Inquiry via Email
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-icon">J</div>
+            <div class="logo-text">Jeeva<span>.dev</span></div>
+          </div>
+          <p>B.Tech Information Technology • Aspiring Software Developer</p>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Jeevananth M G. Designed &amp; Engineered for Technical Recruitment &amp; Portfolio Showcases.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: PROJECT DETAILS MODAL
+       ========================================================================== -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title" id="project-modal-title">Project Details</div>
+        <button class="modal-close-btn close-modal" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="project-modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: IN-PAGE RESUME PDF VIEWER MODAL
+       ========================================================================== -->
+  <div id="resume-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-window" style="max-width: 900px;">
+      <div class="modal-header">
+        <div class="modal-title" id="resume-modal-title">
+          <i class="fas fa-file-pdf" style="color: #ef4444; margin-right: 0.4rem;"></i> Jeevananth M G - Official Resume
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <a href="assets/JEEVANANTH_RESUME.pdf" download="JEEVANANTH_M_G_RESUME.pdf" class="btn btn-primary btn-sm">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+          <button class="modal-close-btn close-modal" aria-label="Close resume modal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="resume-iframe-container">
+          <iframe src="assets/JEEVANANTH_RESUME.pdf" class="resume-iframe" title="Jeevananth Resume PDF Viewer"></iframe>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div style="font-size: 0.85rem; color: var(--text-muted);">
+            <i class="fas fa-info-circle"></i> If the PDF preview does not display in your browser, click "Download PDF" to view it directly.
+          </div>
+          <button class="btn btn-secondary btn-sm close-modal">Close Viewer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 3: LIVE HOTEL AI SIMULATOR MODAL
+       ========================================================================== -->
+  <div id="simulator-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="sim-modal-title">
+    <div class="modal-window" style="max-width: 720px;">
+      <div class="modal-header">
+        <div class="modal-title" id="sim-modal-title">
+          <i class="fas fa-robot" style="color: var(--cyan-light); margin-right: 0.4rem;"></i> Hotel AI Reservation Simulator
+        </div>
+        <button class="modal-close-btn close-modal" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.9rem; color: var(--text-muted);">
+          Test the dynamic booking algorithm and AI smart preference engine live right in your browser!
+        </p>
+
+        <div class="simulator-box">
+          <div class="sim-grid">
+            <div class="sim-field">
+              <label for="sim-room-type">Select Room Type</label>
+              <select id="sim-room-type" onchange="simulateHotelAI()">
+                <option value="standard">Standard Cozy Room ($120/night)</option>
+                <option value="deluxe" selected>Deluxe Executive Suite ($190/night)</option>
+                <option value="penthouse">Presidential Penthouse ($350/night)</option>
+              </select>
+            </div>
+            <div class="sim-field">
+              <label for="sim-nights">Stay Duration (Nights)</label>
+              <input type="number" id="sim-nights" min="1" max="30" value="3" onchange="simulateHotelAI()" oninput="simulateHotelAI()">
+            </div>
+          </div>
+
+          <div class="sim-toggle-row">
+            <div>
+              <div style="font-size: 0.88rem; font-weight: 600; color: #fff;">AI Smart Rate Matcher</div>
+              <div style="font-size: 0.78rem; color: var(--text-muted);">Apply dynamic 15% discount for verified guest profile</div>
+            </div>
+            <input type="checkbox" id="sim-ai-discount" checked onchange="simulateHotelAI()" style="width: 20px; height: 20px; accent-color: var(--primary);">
+          </div>
+
+          <div class="sim-toggle-row">
+            <div>
+              <div style="font-size: 0.88rem; font-weight: 600; color: #fff;">Quiet Floor Preference (AI Allocation)</div>
+              <div style="font-size: 0.78rem; color: var(--text-muted);">AI automatically allocates high-floor quiet zones</div>
+            </div>
+            <input type="checkbox" id="sim-quiet-floor" checked onchange="simulateHotelAI()" style="width: 20px; height: 20px; accent-color: var(--cyan);">
+          </div>
+
+          <div>
+            <label style="display: block; font-size: 0.82rem; font-weight: 600; color: var(--text-muted); margin-bottom: 0.35rem;">
+              Java Engine Live JSON Response
+            </label>
+            <pre class="sim-console-output" id="sim-console-output"></pre>
+          </div>
+
+          <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+            <button class="btn btn-secondary btn-sm close-modal">Cancel</button>
+            <button class="btn btn-primary btn-sm" onclick="confirmSimulationBooking()">
+              <i class="fas fa-check-circle"></i> Confirm Simulated Booking
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll to top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
